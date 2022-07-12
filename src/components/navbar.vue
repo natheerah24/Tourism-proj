@@ -1,28 +1,17 @@
 <template>
-  <!-- <nav>
+    <div>
+        <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
       <router-link to="/admin">Admin</router-link>
-
-  </nav>
-  <router-view/> -->
-  <div id="app">
-    <admin-table v-bind="cities"></admin-table>
-  </div>
+      </nav>
+    </div>
 </template>
-
 <script>
-import AdminTable from './components/AdminTable.vue';
-
 export default {
-  components: {
-  'admin-table': AdminTable,
-},
-
-
+    
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -44,4 +33,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+    
 </style>

@@ -1,6 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AdminList from '../views/AdminList.vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import Store from '../store/index.js';
+
 
 
 
@@ -20,8 +21,8 @@ const routes = [
   },
   {
     path: "/admin",
-    name: "admin-list",
-    component: AdminList,
+    name: " Admin Table",
+    component: AdminTable,
 
   }
 ]

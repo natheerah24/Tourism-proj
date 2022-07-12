@@ -1,12 +1,21 @@
 <template>
-    <v-container>
-        <h1>Admin List</h1>
+    <div id="admin-table"> 
+        <h2>Admin Table</h2>
+        <ul>
+          <li v-bind="city in cities"></li>
+        </ul>
 
-        <div>
+        <!-- <div class="row">
+        <h1 class="col-lg-6">Admin List</h1>
+        <button class="col-lg-6"> Add + </button>
+        </div>
+
+<div>
+        
             <table class="table table table-success table-striped">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">ID</th>
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Handle</th>
@@ -33,12 +42,17 @@
   </tbody>
 </table>
         
-        </div>
-        
-    </v-container>
+        </div> -->
+    </div>
 </template>
 <script>
 export default {
+  props: ['cities'],
+  data () {
+    return{
+
+    }
+  }
     
 }
 </script>
