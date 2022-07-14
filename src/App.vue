@@ -1,18 +1,15 @@
 <template>
   <Nav />
   <router-view />
-  <div id="app">
-    <admin-table v-bind="cities"></admin-table>
-  </div>
 </template>
 
 <script>
-import AdminTable from "./components/AdminTable.vue";
+// import AdminTable from "./components/AdminTable.vue";
 import Nav from "@/components/navbar.vue";
 
 export default {
   components: {
-    "admin-table": AdminTable,
+    // "admin-table": AdminTable,
     Nav,
   },
 };
