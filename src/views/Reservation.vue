@@ -1,6 +1,5 @@
 <template>
   <div id="reservation">
-    
     <ReservationBooking />
   </div>
 </template>

@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <Nav />
+      <Landing />
       <router-view/>
     </v-main>
   </v-app>
@@ -17,8 +18,8 @@ export default {
     Landing
 },
 
-  data: () => ({
+  //data: () => ({
     //
-  }),
+ // }),
 }
 </script>

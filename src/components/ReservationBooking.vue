@@ -76,7 +76,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Reservation'
+};
 </script>
 
 <style></style>
