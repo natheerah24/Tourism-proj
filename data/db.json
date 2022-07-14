@@ -1,0 +1,188 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "city": "Cape Town",
+      "img": "https://smile904.fm/wp-content/uploads/2020/08/capetown.jpg",
+      "description": {
+        "places-to-go1": "Table Mountain",
+        "places-to-go2": "Robben Island",
+        "places-to-go3": "Cape of Good Hope",
+        "places-to-go4": "Franschhoek Hop On Hop Off Wine Tram",
+        "places-to-go5": "Shark Cage Diving"
+      },
+      "cultures": [
+        {
+          "id": 1,
+          "culture": "Xhosa",
+          "video": "https://www.youtube.com/watch?v=zPM8Qid9VSY"
+        },
+        {
+          "id": 2,
+          "culture": "Colored",
+          "video": ""
+        },
+        {
+          "id": 3,
+          "culture": "Afrikaner",
+          "video": ""
+        },
+        {
+          "id": 4,
+          "culture": "Zulu",
+          "video": ""
+        },
+        {
+          "id": 5,
+          "culture": "Sotho",
+          "video": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "city": "Durban",
+      "img": "https://www.bookmymove.co.za/wp-content/uploads/2021/03/1491594077164.jpeg",
+      "description": {
+        "places-to-go1": "Golden Mile",
+        "places-to-go2": "Durban Botanic Gardens",
+        "places-to-go3": "Umgeni River Bird Park",
+        "places-to-go4": "Indian Quarter",
+        "places-to-go5": "uShaka Marine World"
+      },
+      "cultures": [
+        {
+          "id": 1,
+          "culture": "Asian",
+          "video": ""
+        },
+        {
+          "id": 2,
+          "culture": "British",
+          "video": ""
+        },
+        {
+          "id": 3,
+          "culture": "Indian",
+          "video": ""
+        },
+        {
+          "id": 4,
+          "culture": "Zulu",
+          "video": ""
+        },
+        {
+          "id": 5,
+          "culture": "White",
+          "video": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "city": "Pretoria",
+      "img": "https://i.im.ge/2022/07/08/uk6o1K.jpg",
+      "description": {
+        "places-to-go1": "National Zoological Gardens of South Africa",
+        "places-to-go2": "Ann van Dyk Cheetah Center",
+        "places-to-go3": "Union Buildings",
+        "places-to-go4": "Voortrekker Monument",
+        "places-to-go5": "Ditsong  Museums of South Africa"
+      },
+      "cultures": [
+        {
+          "id": 1,
+          "culture": "Pedi",
+          "video": ""
+        },
+        {
+          "id": 2,
+          "culture": "Sotho",
+          "video": ""
+        },
+        {
+          "id": 3,
+          "culture": "Tswana",
+          "video": ""
+        },
+        {
+          "id": 4,
+          "culture": "Zulu",
+          "video": ""
+        },
+        {
+          "id": 5,
+          "culture": "Tsonga",
+          "video": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "city": "Bloukrans Bridge",
+      "img": "https://img.traveltriangle.com/blog/wp-content/uploads/2019/03/Cover-Bloukrans-Bridge-Bungyepb0310.jpg",
+      "description": {
+        "attraction": "Bungee Jumping",
+        "height": "451 m (1,480 ft)",
+        "video": ""
+      }
+    }
+  ],
+
+  "admin": [
+    {
+      "id": 1,
+      "fullname": "Selby",
+      "email": "selbysabelomdashe@gmail.com",
+      "password": "password"
+    },
+
+    {
+      "id": 2,
+      "fullname": "Natheerah",
+      "email": "natheerah24@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "fullname": "Raaid",
+      "email": "raaidlatiegbr@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 4,
+      "fullname": "Live",
+      "email": "saliwalive@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 5,
+      "fullname": "Lecturer",
+      "email": "jason@gmail.com",
+      "password": "password"
+    }
+  ],
+
+  "bigfive": [
+    {
+      "animal": "Lion",
+      "image": "https://i.im.ge/2022/07/08/ukPJXP.jpg",
+      "video": "Video URL"
+    },
+    {
+      "animal": "Elephant",
+      "image": "https://i.im.ge/2022/07/08/ukNJ4S.jpg",
+      "video": "Video URL"
+    },
+    {
+      "animal": "Leopard",
+      "image": "https://cdn.pixabay.com/photo/2021/09/16/11/30/leopard-6629858_960_720.jpg",
+      "video": "Video URL"
+    },
+    {
+      "animal": "African Buffalo",
+      "image": "https://i.im.ge/2022/07/08/ukNBt6.jpg",
+      "video": "Video URL"
+    }
+  ]
+}
