@@ -1,16 +1,16 @@
 <template>
-    <div>
-        <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+  <div>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/reservation">reservation</router-link> |
       <router-link to="/admin">Admin</router-link>
-      </nav>
-    </div>
+    </nav>
+  </div>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>
 <style>
 #app {
@@ -33,5 +33,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-    
 </style>
