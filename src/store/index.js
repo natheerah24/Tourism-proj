@@ -5,50 +5,46 @@ export default createStore({
   state: {
     cities: null,
     animals: null,
-    admin: null,   
+    admin: null,
     reviews: null,
   },
-
   mutations: {
-    increment (state) {
+    increment(state) {
       // mutate state
-      state.count++
+      state.count++;
     },
     setCities: (state, cities) => {
       state.cities = cities;
-    }
-
+    },
   },
-
   actions: {
-    login: async(context, payload) => {
+    login: async (context, payload) => {
       const { email, password } = payload;
-
-      const response = await fetch(`http://localhost:3000/login?email=${email}&password=${password}`);
+      const response = await fetch(
+        `http://localhost:3000/login?email=${email}&password=${password}`
+      );
       const userData = await response.json();
-      context.commit('setUser', userData[0]);
+      context.commit("setUser", userData[0]);
     },
     getCities: async (context) => {
-      fetch('http://localhost:3000/cities')
-      .then((response) => response.json())
-      .then((cities) => context.commit("setCities", cities));
+      fetch("http://localhost:3000/cities")
+        .then((response) => response.json())
+        .then((cities) => context.commit("setCities", cities));
     },
-
-    getCity: async(context, id) => {
-      fetch('http://localhost:3000/cities/' +id)
-      .then((res) => res.json())
-      .then((city) => context.commit("setCity", city ))
+    getCity: async (context, id) => {
+      fetch("http://localhost:3000/cities/" + id)
+        .then((res) => res.json())
+        .then((city) => context.commit("setCity", city));
     },
-
-    updateCity: async(context, City) => {
-      fetch('http://localhost:3000/cities/'+id, {
-        method: 'PUT',
+    updateCity: async (context, City) => {
+      fetch("http://localhost:3000/cities/" + id, {
+        method: "PUT",
         body: JSON.stringify({
-          title: 'foo',
-          body: 'bar',
+          title: "foo",
+          body: "bar",
         }),
         headers: {
-          'Content-type': 'application/json; charset=UTF-8',
+          "Content-type": "application/json; charset=UTF-8",
         },
       })
         .then((response) => response.json())

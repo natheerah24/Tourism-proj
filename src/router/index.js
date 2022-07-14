@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Reservation from "../views/Reservation.vue";
 
 const routes = [
   {
@@ -26,6 +27,19 @@ const routes = [
     name: "Admin",
     component: () => import("../views/Admin.vue"),
   },
+  {
+    path: "/reservation",
+    name: "reservation",
+    component: Reservation,
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+  },
+  // {
+  //   path: "/feedback",
+  //   name: "feedback",
+  //   component: Feedback,
+  // },
 ];
 
 const router = createRouter({

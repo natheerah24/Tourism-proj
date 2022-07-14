@@ -1,4 +1,4 @@
-# tourism-project
+# tourism-proj
 
 ## Project setup
 

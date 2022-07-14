@@ -3,7 +3,9 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/login">Login</router-link> |
-   <router-link to="/admin">Admin</router-link>
+   <router-link to="/reservation">reservation</router-link> |
+    <router-link to="/feedback">feedback</router-link> |
+   <router-link to="/admin">Admin</router-link> 
   </nav>
   <router-view/>
   <div id="app">
