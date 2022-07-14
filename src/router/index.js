@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import Reservation from "../views/Reservation.vue";
+import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
@@ -11,11 +10,17 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
+  },
+  {
+    path: "/slider",
+    name: "slider",
+    component: () => import("@/components/Slider.vue"),
+  },
+  {
+    path: "/footer",
+    name: "footer",
+    component: () => import("@/components/Footer.vue"),
   },
   {
     path: "/login",
@@ -24,22 +29,15 @@ const routes = [
   },
   {
     path: "/admin",
-    name: "Admin",
+    name: "admin",
     component: () => import("../views/Admin.vue"),
   },
   {
     path: "/reservation",
     name: "reservation",
-    component: Reservation,
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    component: () => import("@/components/ReservationBooking.vue")
   },
-  // {
-  //   path: "/feedback",
-  //   name: "feedback",
-  //   component: Feedback,
-  // },
+ 
 ];
 
 const router = createRouter({

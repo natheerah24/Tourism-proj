@@ -1,42 +1,24 @@
 <template>
-  <Nav />
-  <router-view />
-  <div id="app">
-    <admin-table v-bind="cities"></admin-table>
-  </div>
+  <v-app>
+    <v-main>
+      <Nav />
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import AdminTable from "./components/AdminTable.vue";
-import Nav from "@/components/navbar.vue";
-
+import Nav from "@/components/Nav.vue";
+import Landing from "./components/Landing.vue";
 export default {
+  name: 'App',
   components: {
-    "admin-table": AdminTable,
     Nav,
-  },
-};
+    Landing
+},
+
+  data: () => ({
+    //
+  }),
+}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
