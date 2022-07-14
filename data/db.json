@@ -128,7 +128,6 @@
       }
     }
   ],
-
   "admin": [
     {
       "id": 1,
@@ -136,7 +135,6 @@
       "email": "selbysabelomdashe@gmail.com",
       "password": "selby007"
     },
-
     {
       "id": 2,
       "fullname": "Natheerah",
@@ -162,7 +160,6 @@
       "password": "lecturer2022"
     }
   ],
-
   "feedback": [
     {
       "commentid": "1",
@@ -170,7 +167,6 @@
       "name": ""
     }
   ],
-
   "bigfive": [
     {
       "id": 1,
