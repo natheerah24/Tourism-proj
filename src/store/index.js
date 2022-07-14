@@ -1,13 +1,9 @@
 import { createStore } from 'vuex';
-import Vue from 'vue';
-
-Vue.use(Vuex);
-
 
 
 export default createStore({
   state: {
-    Cities: null,
+    cities: null,
     animals: null,
     admin: null,   
     reviews: null,
@@ -17,31 +13,35 @@ export default createStore({
     increment (state) {
       // mutate state
       state.count++
+    },
+    setCities: (state, cities) => {
+      state.cities = cities;
     }
+
   },
 
   actions: {
     login: async(context, payload) => {
       const { email, password } = payload;
 
-      const response = await fetch('http://localhost:3000/login?email=${email}&password=${password}');
+      const response = await fetch(`http://localhost:3000/login?email=${email}&password=${password}`);
       const userData = await response.json();
       context.commit('setUser', userData[0]);
     },
-    getCities: async(context) =>{
+    getCities: async (context) => {
       fetch('http://localhost:3000/cities')
       .then((response) => response.json())
       .then((cities) => context.commit("setCities", cities));
     },
 
     getCity: async(context, id) => {
-      fetch('http://localhost:3000/cities/id' +id)
+      fetch('http://localhost:3000/cities/' +id)
       .then((res) => res.json())
       .then((city) => context.commit("setCity", city ))
     },
 
     updateCity: async(context, City) => {
-      fetch('http://localhost:3000/cities/id', {
+      fetch('http://localhost:3000/cities/'+id, {
         method: 'PUT',
         body: JSON.stringify({
           title: 'foo',

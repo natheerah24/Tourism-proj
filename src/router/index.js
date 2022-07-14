@@ -1,8 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import Store from '../store/index.js';
-
-
 
 
 const routes = [
@@ -22,8 +19,7 @@ const routes = [
   {
     path: "/admin",
     name: " Admin Table",
-    component: AdminTable,
-
+    component: () => import('../components/AdminTable.vue')
   }
 ]
 
