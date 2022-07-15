@@ -129,37 +129,42 @@
     }
   ],
 
-  "admin": [
+  "user": [
     {
       "id": 1,
       "fullname": "Selby",
       "email": "selbysabelomdashe@gmail.com",
-      "password": "selby007"
+      "password": "password",
+      "role": "admin"
     },
 
     {
       "id": 2,
       "fullname": "Natheerah",
-      "email": "",
-      "password": "natheerah12"
+      "email": "natheerah24@gmail.com",
+      "password": "password",
+      "role": "admin"
     },
     {
       "id": 3,
       "fullname": "Raaid",
-      "email": "",
-      "password": "raaid47"
+      "email": "raaidlatiegbr@gmail.com",
+      "password": "password",
+      "role": "admin"
     },
     {
       "id": 4,
       "fullname": "Live",
       "email": "saliwalive@gmail.com",
-      "password": "live329"
+      "password": "password",
+      "role": "admin"
     },
     {
       "id": 5,
       "fullname": "Lecturer",
-      "email": "",
-      "password": "lecturer2022"
+      "email": "json@gmail.com",
+      "password": "password",
+      "role": "admin"
     }
   ],
 

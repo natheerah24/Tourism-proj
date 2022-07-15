@@ -9,7 +9,13 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  computed: {
+    user() {
+      this.$store.state.user;
+    },
+  },
+};
 </script>
 <style>
 #app {
