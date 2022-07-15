@@ -1,5 +1,30 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <Slider/>
 </template>
+<script>
+import Footer from '@/components/Footer.vue';
+import Slider from '@/components/Slider.vue'
+export default {
+  name: 'About',
+  components: {
+    Footer,
+    Slider
+  }
+}
+</script>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+</style>
+
+
+
+
+
+
+
+

@@ -1,7 +1,13 @@
 <template>
   <div>
-    <h1>Login</h1>
-    <div class="container">
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="mt-5">Admin Login</h1>
+    <div class="container shadow">
       <form @submit.prevent="login">
         <input
           type="email"
@@ -21,11 +27,10 @@
           <div><input type="checkbox" id="" /><label>Remember Me</label></div>
           <a href="#">Forgot Password?</a>
         </div>
-
         <button
           type="submit"
-          class="rounded-pill bg-primary"
-          @click="goToAdmin()"
+          class="rounded-pill bg-primary mt-3"
+          @click="goToAdmin"
         >
           Login
         </button>
@@ -41,15 +46,11 @@ export default {
       password: "",
     };
   },
-
   computed: {
-    admin() {
-      this.$store.state.admin;
+    user() {
+      this.$store.state.user;
     },
   },
-
-  name: "Login",
-
   methods: {
     Login() {
       this.$store.dispatch("login", {
@@ -57,9 +58,22 @@ export default {
         password: this.password,
       });
     },
-
     goToAdmin() {
-      this.$router.push("/admin");
+      if (
+        (this.email === "selbysabelomdashe@gmail.com" &&
+          this.password === "password") ||
+        (this.email === "natheerah24@gmail.com" &&
+          this.password === "password") ||
+        (this.email === "raaidlatiegbr@gmail.com" &&
+          this.password === "password") ||
+        (this.email === "saliwalive@gmail.com" &&
+          this.password === "password") ||
+        (this.email === "json@gmail.com" && this.password === "password")
+      ) {
+        this.$router.push("/admin");
+      } else {
+        window.alert("Can't log you in.. Please check your login details");
+      }
     },
   },
 };
@@ -70,23 +84,39 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-
 .user_input {
   width: 300px;
-  height: 25px;
+  height: 30px;
+  background-color: white;
 }
-
 .check {
   display: flex;
 }
-
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  background-color: aqua;
+  padding: 50px;
+  width: fit-content;
 }
-
 .form_footer {
   display: flex;
   justify-content: space-between;
 }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

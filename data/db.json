@@ -15,7 +15,7 @@
         {
           "id": 1,
           "culture": "Xhosa",
-          "video": "https://www.youtube.com/watch?v=zPM8Qid9VSY"
+          "video": ""
         },
         {
           "id": 2,
@@ -125,7 +125,14 @@
         "attraction": "Bungee Jumping",
         "height": "451 m (1,480 ft)",
         "video": ""
-      }
+      },
+      "cultures": [
+        {
+          "id": 1,
+          "culture": "Afrikaans",
+          "video": ""
+        }
+      ]
     }
   ],
   "admin": [

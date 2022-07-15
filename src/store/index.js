@@ -36,30 +36,34 @@ export default createStore({
         .then((res) => res.json())
         .then((city) => context.commit("setCity", city));
     },
-    updateCity: async (context, City) => {
+    updateCity: async(context, id, cities) => {
+      const {city,img ,description,} = cities
       fetch("http://localhost:3000/cities/" + id, {
         method: "PUT",
         body: JSON.stringify({
           city: city,
           img: img,
-          description:description
+          description: description,
+          
         }),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
       })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then(() => context.dispatch("getCities"))
     },
 
     createCity: async(context, cities) => {
-      const {city,img ,description} = cities
+      const {city,img ,description, cultures,} = cities
       fetch('http://localhost:3000/cities', {
         method: 'POST',
         body: JSON.stringify({
           city: city,
           img: img,
-          description:description
+          description:description,
+          cultures:cultures,
+         
         }),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
